@@ -11,9 +11,9 @@ const AuthForm = () =>
     setIsLogin((prevState) => !prevState);
   };
 
-  const submitHandler = () =>
+  const submitHandler = (e) =>
   {
-
+    e.preventDefault()
   }
 
   return (
