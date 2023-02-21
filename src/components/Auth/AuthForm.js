@@ -23,6 +23,8 @@ const AuthForm = () =>
     const enteredEmail = emailInputRef.current.value
     const enteredPassword = passwordInputRef.current.value
 
+    setIsLoading(true)
+
     if (isLogin)
     {
 
@@ -45,6 +47,8 @@ const AuthForm = () =>
         }
       ).then((res) =>
       {
+        setIsLoading(false)
+
         if (res.ok)
         {
 
