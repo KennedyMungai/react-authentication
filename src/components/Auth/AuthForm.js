@@ -28,7 +28,18 @@ const AuthForm = () =>
     }
     else
     {
-      fetch(apiKey)
+      fetch(apiKey,
+        {
+          method: 'POST',
+          body: JSON.stringify(
+            {
+              email: enteredEmail,
+              password: enteredPassword,
+              returnSecureToken: true
+            }
+          )
+        }
+      )
     }
   }
 
