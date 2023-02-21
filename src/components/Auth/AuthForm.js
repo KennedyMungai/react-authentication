@@ -52,8 +52,7 @@ const AuthForm = () =>
         {
           return res.json().then((data) => 
           {
-            // Maybe show an error modal
-            console.log(data)
+            const errorMessage = data.error.message
           })
         }
       })
