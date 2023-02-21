@@ -9,6 +9,7 @@ const AuthForm = () =>
   const passwordInputRef = useRef()
 
   const [isLogin, setIsLogin] = useState(true);
+  const [isLoading, setIsLoading] = useState(false)
 
   const switchAuthModeHandler = () =>
   {
