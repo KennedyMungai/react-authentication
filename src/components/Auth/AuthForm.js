@@ -2,12 +2,19 @@ import { useState } from 'react';
 
 import classes from './AuthForm.module.css';
 
-const AuthForm = () => {
+const AuthForm = () =>
+{
   const [isLogin, setIsLogin] = useState(true);
 
-  const switchAuthModeHandler = () => {
+  const switchAuthModeHandler = () =>
+  {
     setIsLogin((prevState) => !prevState);
   };
+
+  const submitHandler = () =>
+  {
+
+  }
 
   return (
     <section className={classes.auth}>
