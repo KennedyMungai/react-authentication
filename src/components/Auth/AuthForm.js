@@ -53,7 +53,11 @@ const AuthForm = () =>
           return res.json().then((data) => 
           {
             let errorMessage = 'Authentication message'
-            errorMessage = data.error.message
+
+            if (data.error.message)
+            {
+              errorMessage = data.error.message
+            }
           })
         }
       })
