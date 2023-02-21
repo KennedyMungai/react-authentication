@@ -94,7 +94,7 @@ const AuthForm = () =>
           />
         </div>
         <div className={classes.actions}>
-          <button>{isLogin ? 'Login' : 'Create Account'}</button>
+          {!isLoading && <button>{isLogin ? 'Login' : 'Create Account'}</button>}
           <button
             type='button'
             className={classes.toggle}
