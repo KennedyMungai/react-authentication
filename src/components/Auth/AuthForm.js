@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import apiKey from './api-key';
 
 import classes from './AuthForm.module.css';
 
@@ -20,6 +21,15 @@ const AuthForm = () =>
 
     const enteredEmail = emailInputRef.current.value
     const enteredPassword = passwordInputRef.current.value
+
+    if (isLogin)
+    {
+
+    }
+    else
+    {
+      fetch(apiKey)
+    }
   }
 
   return (
