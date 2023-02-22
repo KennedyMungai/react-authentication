@@ -34,7 +34,10 @@ const retrieveStoredToken = () =>
         return null
     }
 
-    return storedToken
+    return {
+        token: storedToken,
+        duration: remainingTime
+    }
 }
 
 export const AuthContextProvider = (props) =>
