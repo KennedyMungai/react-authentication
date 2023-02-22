@@ -22,7 +22,7 @@ const calculateRemainingTime = (expirationTime) =>
 const retrieveStoredToken = () =>
 {
     const storedToken = localStorage.getItem('token')
-    const storedExpirationDate =  
+    const storedExpirationDate = localStorage.getItem('expirationTime')
 }
 
 export const AuthContextProvider = (props) =>
