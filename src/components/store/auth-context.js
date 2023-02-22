@@ -9,7 +9,7 @@ const AuthContext = createContext({
 
 const calculateRemainingTime = (expirationTime) =>
 {
-
+    const currentTime = new Date()
 }
 
 export const AuthContextProvider = (props) =>
