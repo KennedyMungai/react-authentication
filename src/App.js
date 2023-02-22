@@ -9,6 +9,8 @@ import HomePage from './pages/HomePage';
 
 function App()
 {
+  const authCtx = useContext(AuthContext)
+
   return (
     <Layout>
       <Switch>
