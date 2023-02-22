@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout';
 import UserProfile from './components/Profile/UserProfile';
 import AuthContext from './components/store/auth-context';
 import AuthPage from './pages/AuthPage';
+import Error from './pages/Error';
 import HomePage from './pages/HomePage';
 
 function App()
@@ -31,6 +32,9 @@ function App()
             <UserProfile />
           </Route>
         }
+        <Route path='*'>
+          <Error />
+        </Route>
       </Switch>
     </Layout>
   );
