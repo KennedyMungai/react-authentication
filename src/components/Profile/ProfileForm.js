@@ -18,7 +18,7 @@ const ProfileForm = () =>
     fetch(passwordChangeAPIKey, {
       method: 'POST',
       body: JSON.stringify({
-        idToken: ,
+        idToken: authCtx.token,
         password: enteredNewPassword,
         returnSecureToken: true,
       }),
