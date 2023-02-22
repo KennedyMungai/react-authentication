@@ -26,6 +26,7 @@ const ProfileForm = () =>
         'Content-Type': 'application/json'
       }
     })
+      .then()
   }
 
   return (
@@ -35,6 +36,7 @@ const ProfileForm = () =>
         <input
           type='password'
           id='new-password'
+          minLength='7'
           ref={newPasswordInputRef}
         />
       </div>
