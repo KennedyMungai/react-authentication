@@ -63,11 +63,6 @@ const AuthForm = () =>
         {
           let errorMessage = 'Authentication error'
 
-          // if (data.error.message)
-          // {
-          //   errorMessage = data.error.message
-          // }
-
           alert(errorMessage)
         })
       }
