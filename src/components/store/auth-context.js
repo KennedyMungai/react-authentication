@@ -13,6 +13,16 @@ const AuthContextProvider = (props) =>
 
     const userIsLoggedIn = !!token
 
+    const loginHandler = () =>
+    {
+
+    }
+
+    const logoutHandler = () =>
+    {
+
+    }
+
     return <AuthContext.Provider>
         {props.children}
     </AuthContext.Provider>
