@@ -11,6 +11,10 @@ const ProfileForm = () =>
     e.preventDefault()
 
     const enteredNewPassword = newPasswordInputRef.current.value
+
+    fetch(passwordChangeAPIKey, {
+      method: 'POST'
+    })
   }
 
   return (
