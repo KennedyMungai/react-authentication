@@ -3,7 +3,7 @@ import React from 'react'
 const Error = () =>
 {
     return (
-        <h1>You have probably entered the wrong URL</h1>
+        <h1>Something went wrong</h1>
     )
 }
 
