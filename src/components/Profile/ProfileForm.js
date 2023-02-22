@@ -1,4 +1,5 @@
 import { useContext, useRef } from 'react';
+import { useHistory } from 'react-router-dom';
 import { passwordChangeAPIKey } from '../Auth/api-key';
 import AuthContext from '../store/auth-context';
 import classes from './ProfileForm.module.css';
