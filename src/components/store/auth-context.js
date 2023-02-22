@@ -55,7 +55,7 @@ export const AuthContextProvider = (props) =>
 
     const userIsLoggedIn = !!token
 
-    const logoutHandler = () =>
+    const logoutHandler = useCallback(() =>
     {
         setToken(null)
         localStorage.removeItem('token')
@@ -65,7 +65,7 @@ export const AuthContextProvider = (props) =>
         {
             clearTimeout(logoutTimer)
         }
-    }
+    }, [])
 
     const loginHandler = (token, expirationTime) =>
     {
