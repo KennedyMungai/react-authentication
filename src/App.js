@@ -22,9 +22,12 @@ function App()
         <Route path='/auth'>
           <AuthPage />
         </Route>
-        <Route path='/profile'>
-          <UserProfile />
-        </Route>
+        {
+          isLoggedIn &&
+          <Route path='/profile'>
+            <UserProfile />
+          </Route>
+        }
       </Switch>
     </Layout>
   );
