@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import apiKey from './api-key';
+import signUpAPIKey, { signInAPIKey } from './api-key';
 
 import classes from './AuthForm.module.css';
 
@@ -27,11 +27,11 @@ const AuthForm = () =>
 
     if (isLogin)
     {
-
+      fetch()
     }
     else
     {
-      fetch(apiKey,
+      fetch(signUpAPIKey,
         {
           method: 'POST',
           body: JSON.stringify(
