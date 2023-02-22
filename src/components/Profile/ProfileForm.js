@@ -5,9 +5,9 @@ const ProfileForm = () =>
 {
   const newPasswordInputRef = useRef()
 
-  const submitHandler = () =>
+  const submitHandler = (e) =>
   {
-
+    e.preventDefault()
   }
 
   return (
