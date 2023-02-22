@@ -8,6 +8,8 @@ const ProfileForm = () =>
 {
   const newPasswordInputRef = useRef()
 
+  const history = useHistory()
+
   const authCtx = useContext(AuthContext)
 
   const submitHandler = (e) =>
