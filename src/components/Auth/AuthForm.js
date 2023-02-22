@@ -64,6 +64,8 @@ const AuthForm = () =>
           let errorMessage = 'Authentication error'
 
           alert(errorMessage)
+
+          throw new Error(errorMessage)
         })
       }
     })
