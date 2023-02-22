@@ -23,6 +23,13 @@ const AuthContextProvider = (props) =>
         setToken(null)
     }
 
+    const contextValue = {
+        token,
+        isLoggedIn: userIsLoggedIn,
+        login: loginHandler,
+        logout: logoutHandler
+    }
+
     return <AuthContext.Provider>
         {props.children}
     </AuthContext.Provider>
