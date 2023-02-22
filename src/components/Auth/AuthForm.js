@@ -63,11 +63,16 @@ const AuthForm = () =>
         {
           let errorMessage = 'Authentication error'
 
-          alert(errorMessage)
 
           throw new Error(errorMessage)
         })
       }
+    }).then((data) => 
+    {
+
+    }).catch((err) =>
+    {
+      alert(err.message)
     })
   }
 
