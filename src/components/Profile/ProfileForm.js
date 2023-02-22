@@ -5,6 +5,11 @@ const ProfileForm = () =>
 {
   const newPasswordInputRef = useRef()
 
+  const submitHandler = () =>
+  {
+
+  }
+
   return (
     <form className={classes.form}>
       <div className={classes.control}>
