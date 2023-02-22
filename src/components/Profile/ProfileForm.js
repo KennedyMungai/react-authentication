@@ -1,10 +1,13 @@
 import { useContext, useRef } from 'react';
 import { passwordChangeAPIKey } from '../Auth/api-key';
+import AuthContext from '../store/auth-context';
 import classes from './ProfileForm.module.css';
 
 const ProfileForm = () =>
 {
   const newPasswordInputRef = useRef()
+
+  const authCtx = useContext(AuthContext)
 
   const submitHandler = (e) =>
   {
