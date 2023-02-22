@@ -11,6 +11,8 @@ const calculateRemainingTime = (expirationTime) =>
 {
     const currentTime = new Date().getTime()
     const adjExpirationTime = new Date(expirationTime).getTime()
+
+    const remainingTime = adjExpirationTime - currentTime
 }
 
 export const AuthContextProvider = (props) =>
