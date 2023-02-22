@@ -1,8 +1,15 @@
 import { createContext } from "react";
 
-const AuthCOntext = createContext({
+const AuthContext = createContext({
     token: '',
     isLoggedIn: false,
     login: (token) => { },
     logout: () => { }
 })
+
+const AuthContextProvider = (props) =>
+{
+    return <AuthContext.Provider>
+        {props.children}
+    </AuthContext.Provider>
+}   
