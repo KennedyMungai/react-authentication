@@ -49,31 +49,34 @@ const AuthForm = () =>
           'Content-Type': 'application/json'
         }
       }
-    ).then((res) =>
-    {
-      setIsLoading(false)
+    )
+      .then((res) =>
+      {
+        setIsLoading(false)
 
-      if (res.ok)
-      {
-        return res.json()
-      }
-      else
-      {
-        return res.json().then((data) => 
+        if (res.ok)
         {
-          let errorMessage = 'Authentication error'
+          return res.json()
+        }
+        else
+        {
+          return res.json().then((data) => 
+          {
+            let errorMessage = 'Authentication error'
 
 
-          throw new Error(errorMessage)
-        })
-      }
-    }).then((data) => 
-    {
-      console.log(data)
-    }).catch((err) =>
-    {
-      alert(err.message)
-    })
+            throw new Error(errorMessage)
+          })
+        }
+      })
+      .then((data) => 
+      {
+        console.log(data)
+      })
+      .catch((err) =>
+      {
+        alert(err.message)
+      })
   }
 
   return (
