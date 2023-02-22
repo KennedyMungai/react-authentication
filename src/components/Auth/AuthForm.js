@@ -27,7 +27,7 @@ const AuthForm = () =>
 
     if (isLogin)
     {
-      fetch()
+
     }
     else
     {
