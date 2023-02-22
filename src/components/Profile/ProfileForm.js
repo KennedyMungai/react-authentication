@@ -21,7 +21,7 @@ const ProfileForm = () =>
         />
       </div>
       <div className={classes.action}>
-        <button>Change Password</button>
+        <button type='submit'>Change Password</button>
       </div>
     </form>
   );
