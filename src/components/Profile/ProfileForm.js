@@ -26,7 +26,10 @@ const ProfileForm = () =>
         'Content-Type': 'application/json'
       }
     })
-      .then()
+      .then(res =>
+      {
+        // TODO: Add some code here. The assumption is that this code always goes through
+      })
   }
 
   return (
