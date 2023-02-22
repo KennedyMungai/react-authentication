@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import signUpAPIKey, { signInAPIKey } from './api-key';
 
 import classes from './AuthForm.module.css';
