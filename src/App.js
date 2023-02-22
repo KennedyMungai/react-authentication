@@ -19,9 +19,12 @@ function App()
         <Route path='/' exact>
           <HomePage />
         </Route>
-        <Route path='/auth'>
-          <AuthPage />
-        </Route>
+        {
+          isLoggedIn &&
+          <Route path='/auth'>
+            <AuthPage />
+          </Route>
+        }
         {
           isLoggedIn &&
           <Route path='/profile'>
