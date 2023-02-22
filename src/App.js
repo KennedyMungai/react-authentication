@@ -20,7 +20,7 @@ function App()
           <HomePage />
         </Route>
         {
-          isLoggedIn &&
+          !isLoggedIn &&
           <Route path='/auth'>
             <AuthPage />
           </Route>
