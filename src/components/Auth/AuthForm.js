@@ -55,7 +55,7 @@ const AuthForm = () =>
 
       if (res.ok)
       {
-
+        return res.json()
       }
       else
       {
