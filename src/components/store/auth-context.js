@@ -33,6 +33,8 @@ const retrieveStoredToken = () =>
 
         return null
     }
+
+    return storedToken
 }
 
 export const AuthContextProvider = (props) =>
