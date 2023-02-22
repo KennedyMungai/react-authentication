@@ -9,7 +9,7 @@ const AuthContext = createContext({
 
 const AuthContextProvider = (props) =>
 {
-
+    const [token, setToken] = useState(null)
 
     return <AuthContext.Provider>
         {props.children}
