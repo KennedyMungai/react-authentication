@@ -2,10 +2,12 @@ import { Switch, Route } from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
 import UserProfile from './components/Profile/UserProfile';
+import AuthContext from './components/store/auth-context';
 import AuthPage from './pages/AuthPage';
 import HomePage from './pages/HomePage';
 
-function App() {
+function App()
+{
   return (
     <Layout>
       <Switch>
