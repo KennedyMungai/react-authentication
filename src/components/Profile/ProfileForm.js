@@ -32,6 +32,7 @@ const ProfileForm = () =>
       .then(res =>
       {
         // TODO: Add some code here. The assumption is that this code always goes through
+        history.replace('/')
       })
   }
 
