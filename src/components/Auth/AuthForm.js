@@ -1,4 +1,5 @@
 import { useContext, useRef, useState } from 'react';
+import AuthContext from '../store/auth-context';
 import signUpAPIKey, { signInAPIKey } from './api-key';
 
 import classes from './AuthForm.module.css';
@@ -7,6 +8,8 @@ const AuthForm = () =>
 {
   const emailInputRef = useRef()
   const passwordInputRef = useRef()
+
+  const authCtx = useContext(AuthContext)
 
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false)
