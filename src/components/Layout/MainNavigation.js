@@ -23,15 +23,18 @@ const MainNavigation = () =>
               <Link to='/auth'>Login</Link>
             </li>
           }
-          <li>
-            <Link to='/profile'>Profile</Link>
-          </li>
+          {
+            isLoggedIn &&
+            <li>
+              <Link to='/profile'>Profile</Link>
+            </li>
+          }
           <li>
             <button>Logout</button>
           </li>
         </ul>
       </nav>
-    </header>
+    </header >
   );
 };
 
