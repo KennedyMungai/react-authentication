@@ -11,7 +11,7 @@ const ProfileForm = () =>
   }
 
   return (
-    <form className={classes.form}>
+    <form className={classes.form} onSubmit={submitHandler}>
       <div className={classes.control}>
         <label htmlFor='new-password'>New Password</label>
         <input
