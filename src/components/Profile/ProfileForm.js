@@ -3,6 +3,8 @@ import classes from './ProfileForm.module.css';
 
 const ProfileForm = () =>
 {
+  const newPasswordInputRef = useRef()
+
   return (
     <form className={classes.form}>
       <div className={classes.control}>
