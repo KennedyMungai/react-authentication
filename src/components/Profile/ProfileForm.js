@@ -8,6 +8,8 @@ const ProfileForm = () =>
   const submitHandler = (e) =>
   {
     e.preventDefault()
+
+    const enteredNewPassword = newPasswordInputRef.current.value
   }
 
   return (
