@@ -29,11 +29,13 @@ const AuthForm = () =>
 
     if (isLogin)
     {
-
+      url = signInAPIKey
     }
     else
     {
-      fetch(signUpAPIKey,
+      url = signUpAPIKey
+
+      fetch(url,
         {
           method: 'POST',
           body: JSON.stringify(
