@@ -13,7 +13,11 @@ const ProfileForm = () =>
     const enteredNewPassword = newPasswordInputRef.current.value
 
     fetch(passwordChangeAPIKey, {
-      method: 'POST'
+      method: 'POST',
+      body: JSON.stringify(),
+      headers: {
+        'Content-Type': 'application/json'
+      }
     })
   }
 
