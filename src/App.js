@@ -25,12 +25,16 @@ function App()
             <AuthPage />
           </Route>
         }
-        {
-          isLoggedIn &&
-          <Route path='/profile'>
+        <Route path='/profile'>
+          {
+            isLoggedIn &&
             <UserProfile />
-          </Route>
-        }
+          }
+          {
+            !isLoggedIn &&
+            <Redirect to='/auth' />
+          }
+        </Route>
         <Route path='*'>
           <Redirect to='/' />
         </Route>
