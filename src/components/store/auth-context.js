@@ -43,7 +43,13 @@ const retrieveStoredToken = () =>
 export const AuthContextProvider = (props) =>
 {
     const tokenData = retrieveStoredToken()
-    const initialToken = localStorage.getItem('token')
+
+    let initialToken
+
+    if (tokenData)
+    {
+        initialToken = tokenData.token
+    }
 
     const [token, setToken] = useState(initialToken)
 
