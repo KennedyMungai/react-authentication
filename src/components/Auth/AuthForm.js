@@ -25,6 +25,8 @@ const AuthForm = () =>
 
     setIsLoading(true)
 
+    let url
+
     if (isLogin)
     {
 
