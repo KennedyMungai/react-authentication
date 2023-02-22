@@ -20,7 +20,7 @@ const AuthContextProvider = (props) =>
 
     const logoutHandler = () =>
     {
-
+        setToken(null)
     }
 
     return <AuthContext.Provider>
