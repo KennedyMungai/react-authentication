@@ -10,6 +10,8 @@ const AuthForm = () =>
   const emailInputRef = useRef()
   const passwordInputRef = useRef()
 
+  const history = useHistory()
+
   const authCtx = useContext(AuthContext)
 
   const [isLogin, setIsLogin] = useState(true);
