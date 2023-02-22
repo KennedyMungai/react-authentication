@@ -7,6 +7,11 @@ const AuthContext = createContext({
     logout: () => { }
 })
 
+const calculateRemainingTime = (expirationTime) =>
+{
+
+}
+
 export const AuthContextProvider = (props) =>
 {
     const initialToken = localStorage.getItem('token')
